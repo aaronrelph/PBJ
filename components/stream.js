@@ -1,28 +1,24 @@
 const FAKE_STREAM = [
   {
-    title: 'Someone Great'
+    title: "Someone Great"
   },
   {
-    title: 'Let It Go'
+    title: "Let It Go"
   },
   {
-    title: 'Royals'
+    title: "Royals"
   },
   {
-    title: 'Aint it so'
+    title: "Aint it so"
   },
   {
-    title: 'Get Lucky!!!'
+    title: "Get Lucky!!!"
   }
-]
+];
 
 export default () => (
   <div>
-    <ul>
-      { FAKE_STREAM.map(item => (
-        <li>{ item.title }</li>
-      ))}
-    </ul>
+    <ul>{FAKE_STREAM.map(item => <li>{item.title}</li>)}</ul>
 
     <style jsx>{`
       li {
@@ -35,4 +31,4 @@ export default () => (
       }
     `}</style>
   </div>
-)
+);

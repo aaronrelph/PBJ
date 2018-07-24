@@ -1,14 +1,15 @@
-import Main from '../components/main'
-import Stream from '../components/stream'
+import App from "../components/App";
+import Stream from "../components/Stream";
+import NowPlaying from "../components/NowPlaying";
 
 export default () => (
-
   <div>
     <h1>PBJ</h1>
 
     <div className="layout">
       <Stream />
-      <Main />
+      <App />
+      <NowPlaying />
     </div>
 
     <style jsx>{`
@@ -17,4 +18,4 @@ export default () => (
       }
     `}</style>
   </div>
-)
+);
